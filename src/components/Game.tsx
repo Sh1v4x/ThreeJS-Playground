@@ -23,9 +23,9 @@ const Game: React.FC = () => {
     const ground = new Ground(scene, 0, 0, 0);
     const cube = new Cube(scene, 5, 1, 5, "box/box.jpg");
 
-    const cube2 = new Cube(scene, 10, 1, 5, "/box/box.jpg");
+    const cube2 = new Cube(scene, 10, 1, 5, "/assets/box/box.jpg");
 
-    const cube3 = new Cube(scene, 15, 1, 5, "public/box/box.jpg");
+    const cube3 = new Cube(scene, 15, 1, 5, "assets/box/box.jpg");
 
     const inputManager = new InputManager();
     const collisionDetector = new CollisionDetector();

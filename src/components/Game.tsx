@@ -22,12 +22,13 @@ const Game: React.FC = () => {
     const player = new Player(scene, camera);
     const ground = new Ground(scene, 0, 0, 0);
     const cube = new Cube(scene, 5, 1, 5, "assets/box/box.jpg");
+    const cube2 = new Cube(scene, 15, 1, 30, "assets/box/box_2.jpg");
 
     const inputManager = new InputManager();
     const collisionDetector = new CollisionDetector();
     const collisionVisualizer = new CollisionVisualizer(scene);
 
-    const objects = [cube.mesh, ground.mesh];
+    const objects = [cube.mesh, cube2.mesh, ground.mesh];
     collisionVisualizer.updateCollisionMeshes(objects);
 
     inputManager.addKeyPressHandler("KeyP", () => {

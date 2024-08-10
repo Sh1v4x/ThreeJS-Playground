@@ -1,1 +1,1 @@
-# ThreeJS-Playground
+ThreeJS Playground

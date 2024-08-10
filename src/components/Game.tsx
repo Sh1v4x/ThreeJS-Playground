@@ -21,7 +21,7 @@ const Game: React.FC = () => {
     const { scene, camera, renderer } = setupScene(mountRef.current);
     const player = new Player(scene, camera);
     const ground = new Ground(scene, 0, 0, 0);
-    const cube = new Cube(scene, 5, 1, 5, "/box.jpg");
+    const cube = new Cube(scene, 5, 1, 5, "/box/box.jpg");
 
     const inputManager = new InputManager();
     const collisionDetector = new CollisionDetector();

@@ -1,10 +1,10 @@
 import * as THREE from "three";
 
 const textureLoader = new THREE.TextureLoader();
-const grassTexture = textureLoader.load("/grass.jpg");
-const sandTexture = textureLoader.load("/sand.jpg");
-const stoneTexture = textureLoader.load("/stone.jpg");
-const blendTexture = textureLoader.load("/blend_map.jpg");
+const grassTexture = textureLoader.load("assets/ground/grass.jpg");
+const sandTexture = textureLoader.load("/assets/ground/sand.jpg");
+const stoneTexture = textureLoader.load("/assets/ground/stone.jpg");
+const blendTexture = textureLoader.load("/assets/blendmap/blend_map.jpg");
 
 [grassTexture, sandTexture, stoneTexture].forEach((texture) => {
   texture.wrapS = texture.wrapT = THREE.RepeatWrapping;

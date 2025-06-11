@@ -13,6 +13,8 @@
 
 /public/house.glb
 
+/testassets
+
 # misc
 .DS_Store
 .env.local
